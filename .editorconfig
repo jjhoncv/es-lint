@@ -1,0 +1,22 @@
+root = true
+
+[*]
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+[*.{html,pug}]
+indent_style = space
+indent_size = 2
+
+[*.{js,ts}]
+indent_style = space
+indent_size = 2
+
+[*.styl]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

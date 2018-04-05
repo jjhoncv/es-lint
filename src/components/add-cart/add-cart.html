@@ -2,16 +2,16 @@ import { Session } from "./../model/Session"
 import { Product } from "./../model/Product"
 
 export class AddCart {
-    constructor (form) {
+    constructor(form) {
         this.form = document.querySelector(form)
         this.init()
     }
 
-    suscribeEvents () {
+    suscribeEvents() {
         this.form.addEventListener("submit", this.submit)
     }
 
-    submit (e) {
+    submit(e) {
         e.preventDefault()
         let session = Session.instance()
         session.shoppingCart.addProduct(
@@ -23,7 +23,7 @@ export class AddCart {
         )
     }
 
-    init (){
+    init() {
         this.suscribeEvents()
     }
 }
